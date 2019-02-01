@@ -18,7 +18,6 @@ class MainController: UITableViewController {
   
     }
 
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -33,22 +32,35 @@ class MainController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainIdentifier", for: indexPath)
-
         // Configure the cell...
         cell.textLabel?.text = arrayClass[indexPath.row]
         return cell
     }
  
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let idOption = indexPath.row
+        let nameOption = arrayClass[idOption]
+        let segueName = "Segue\(nameOption)Controller"
+        if getSegueValidation(idOption) {
+            self.performSegue(withIdentifier: segueName, sender: idOption)
+        }
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let segueIdentifier = segue.identifier
+        let idOption = sender as! Int
+        
+        switch idOption {
+        case 0:
+            let segueViewController: ViewController = segue.destination as! ViewController
+            segueViewController.valueReceived = segueIdentifier
+            break
+        default:
+            break
+        }
+    }
 
-    func getSegueValidation(segueValue: Int) -> Bool {
+    func getSegueValidation(_ segueValue: Int) -> Bool {
         var validation = false;
         switch segueValue {
         case 0:

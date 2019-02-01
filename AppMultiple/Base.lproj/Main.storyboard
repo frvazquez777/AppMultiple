@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AhM-Ul-crJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1868" y="333"/>
+            <point key="canvasLocation" x="1866" y="193"/>
         </scene>
         <!--Mazda Controller-->
         <scene sceneID="FYR-iH-bOf">
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAZ-JC-WNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2136" y="984"/>
+            <point key="canvasLocation" x="2682" y="513"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8pM-xh-wbB">
