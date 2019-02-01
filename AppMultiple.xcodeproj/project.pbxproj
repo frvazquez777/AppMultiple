@@ -13,6 +13,8 @@
 		302DDC142204161A00204A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302DDC122204161A00204A43 /* LaunchScreen.storyboard */; };
 		3043BDA02204A6FD004A4951 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3043BD9F2204A6FD004A4951 /* MainController.swift */; };
 		30CFC5892204AFA2002AE8AB /* MazdaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5882204AFA2002AE8AB /* MazdaController.swift */; };
+		30CFC58D2204DDAF002AE8AB /* Mazda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC58C2204DDAF002AE8AB /* Mazda.swift */; };
+		30CFC58F2204EBB8002AE8AB /* Mazda3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC58E2204EBB8002AE8AB /* Mazda3.swift */; };
 		30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDE21A2204AB8B008584F1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		302DDC152204161A00204A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3043BD9F2204A6FD004A4951 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		30CFC5882204AFA2002AE8AB /* MazdaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazdaController.swift; sourceTree = "<group>"; };
+		30CFC58C2204DDAF002AE8AB /* Mazda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazda.swift; sourceTree = "<group>"; };
+		30CFC58E2204EBB8002AE8AB /* Mazda3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazda3.swift; sourceTree = "<group>"; };
 		30EDE21A2204AB8B008584F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,7 @@
 		302DDC082204161800204A43 /* AppMultiple */ = {
 			isa = PBXGroup;
 			children = (
+				30CFC58B2204DD62002AE8AB /* Models */,
 				3043BD9E2204A6CE004A4951 /* Controllers */,
 				302DDC092204161800204A43 /* AppDelegate.swift */,
 				3043BD9F2204A6FD004A4951 /* MainController.swift */,
@@ -76,6 +81,15 @@
 				30CFC5882204AFA2002AE8AB /* MazdaController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		30CFC58B2204DD62002AE8AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30CFC58C2204DDAF002AE8AB /* Mazda.swift */,
+				30CFC58E2204EBB8002AE8AB /* Mazda3.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CFC58D2204DDAF002AE8AB /* Mazda.swift in Sources */,
 				30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */,
 				30CFC5892204AFA2002AE8AB /* MazdaController.swift in Sources */,
+				30CFC58F2204EBB8002AE8AB /* Mazda3.swift in Sources */,
 				3043BDA02204A6FD004A4951 /* MainController.swift in Sources */,
 				302DDC0A2204161800204A43 /* AppDelegate.swift in Sources */,
 			);

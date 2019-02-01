@@ -81,89 +81,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibl-bQ-x05">
-                                <rect key="frame" x="52" y="200" width="271" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueg-gW-FvP">
+                                <rect key="frame" x="68" y="210" width="239" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="caY-TQ-jVL"/>
+                                    <constraint firstAttribute="height" constant="40" id="moG-gA-rtC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Crear Mazda">
-                                    <color key="titleColor" red="0.69192161425254994" green="0.90607175035506049" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueg-gW-FvP">
-                                <rect key="frame" x="52" y="270" width="271" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Propiedades Mazda">
                                     <color key="titleColor" red="0.69192161429999999" green="0.90607175039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="PropiedadesMazda:" destination="xFM-I4-6uf" eventType="touchUpInside" id="cPh-sj-r41"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLe-8L-MW6">
-                                <rect key="frame" x="52" y="340" width="271" height="40"/>
+                                <rect key="frame" x="68" y="280" width="239" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="gr1-Q6-hIq"/>
+                                    <constraint firstAttribute="height" constant="40" id="Raf-7y-W5v"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Enceder Mazda">
+                                <state key="normal" title="Encender Mazda">
                                     <color key="titleColor" red="0.69192161429999999" green="0.90607175039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="EncenderMazda:" destination="xFM-I4-6uf" eventType="touchUpInside" id="dk3-6m-dHB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSv-JC-y1F">
-                                <rect key="frame" x="52" y="410" width="271" height="40"/>
+                                <rect key="frame" x="68" y="350" width="239" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WAO-N8-ppS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Acelerar Mazda">
                                     <color key="titleColor" red="0.69192161429999999" green="0.90607175039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="AcelerarMazda:" destination="xFM-I4-6uf" eventType="touchUpInside" id="2Ej-UD-iyL"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info. Mazda" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdU-hB-xRg">
-                                <rect key="frame" x="52" y="509" width="89" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="1Yh-0k-0Mt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info. Mazda" textAlignment="justified" lineBreakMode="characterWrap" numberOfLines="7" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YdU-hB-xRg">
+                                <rect key="frame" x="52" y="498" width="276" height="109"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAZDA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uun-Gx-Cxe">
-                                <rect key="frame" x="140" y="116" width="73" height="24"/>
+                                <rect key="frame" x="151" y="91" width="73" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="4vL-SL-XcW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibl-bQ-x05">
+                                <rect key="frame" x="68" y="140" width="239" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="D7W-Xo-wfR"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Crear Mazda">
+                                    <color key="titleColor" red="0.69192161425254994" green="0.90607175035506049" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CrearMazda:" destination="xFM-I4-6uf" eventType="touchUpInside" id="LTt-U7-ktx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roY-U6-Tg2">
+                                <rect key="frame" x="68" y="420" width="239" height="40"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sf8-p9-hvi"/>
+                                </constraints>
+                                <state key="normal" title="Recargar">
+                                    <color key="titleColor" red="0.69192161429999999" green="0.90607175039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RecargarMazda:" destination="xFM-I4-6uf" eventType="touchUpInside" id="S2P-6j-UZw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QSv-JC-y1F" firstAttribute="centerX" secondItem="Ibl-bQ-x05" secondAttribute="centerX" id="0dG-kK-ru7"/>
-                            <constraint firstItem="XLe-8L-MW6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ueg-gW-FvP" secondAttribute="trailing" id="17h-uh-Og9"/>
-                            <constraint firstItem="Uun-Gx-Cxe" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="140" id="189-9d-suo"/>
-                            <constraint firstItem="QSv-JC-y1F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XLe-8L-MW6" secondAttribute="leading" id="8Vh-U2-QdU"/>
-                            <constraint firstItem="XLe-8L-MW6" firstAttribute="centerX" secondItem="d9h-kv-m2g" secondAttribute="centerX" id="B1T-TO-ba6"/>
-                            <constraint firstItem="QSv-JC-y1F" firstAttribute="leading" secondItem="YdU-hB-xRg" secondAttribute="leading" id="Fat-M4-Nxj"/>
-                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ibl-bQ-x05" secondAttribute="leading" id="IRl-PF-jaL"/>
-                            <constraint firstItem="Vio-Od-1rG" firstAttribute="bottom" secondItem="YdU-hB-xRg" secondAttribute="bottom" constant="137" id="Iq7-gV-eb9"/>
-                            <constraint firstItem="QSv-JC-y1F" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="52" id="Paa-iz-ACk"/>
-                            <constraint firstItem="XLe-8L-MW6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ibl-bQ-x05" secondAttribute="trailing" id="QLd-Da-WEx"/>
-                            <constraint firstItem="Ibl-bQ-x05" firstAttribute="top" secondItem="Uun-Gx-Cxe" secondAttribute="bottom" constant="60" id="TXh-EZ-uGA"/>
-                            <constraint firstItem="Uun-Gx-Cxe" firstAttribute="top" secondItem="Vio-Od-1rG" secondAttribute="top" constant="52" id="XVX-Dz-6I1"/>
-                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ueg-gW-FvP" secondAttribute="leading" id="avl-jd-LB6"/>
-                            <constraint firstItem="Vio-Od-1rG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YdU-hB-xRg" secondAttribute="trailing" symbolic="YES" id="e6a-Es-mz5"/>
-                            <constraint firstAttribute="bottom" secondItem="XLe-8L-MW6" secondAttribute="bottom" constant="287" id="ehT-9k-V7T"/>
-                            <constraint firstItem="ueg-gW-FvP" firstAttribute="top" secondItem="Ibl-bQ-x05" secondAttribute="bottom" constant="30" id="f12-bg-I9x"/>
-                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YdU-hB-xRg" secondAttribute="leading" id="gCk-2H-IrC"/>
-                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vio-Od-1rG" secondAttribute="leading" id="hLy-1y-Yeg"/>
-                            <constraint firstItem="Vio-Od-1rG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Uun-Gx-Cxe" secondAttribute="trailing" symbolic="YES" id="mCd-rv-4iS"/>
-                            <constraint firstItem="XLe-8L-MW6" firstAttribute="top" secondItem="ueg-gW-FvP" secondAttribute="bottom" constant="30" id="pVX-59-3tw"/>
-                            <constraint firstItem="QSv-JC-y1F" firstAttribute="centerX" secondItem="ueg-gW-FvP" secondAttribute="centerX" id="rPc-fd-AWc"/>
-                            <constraint firstItem="QSv-JC-y1F" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XLe-8L-MW6" secondAttribute="trailing" id="tQB-Vg-KZl"/>
-                            <constraint firstItem="QSv-JC-y1F" firstAttribute="top" secondItem="XLe-8L-MW6" secondAttribute="bottom" constant="30" id="xKc-em-GGc"/>
-                            <constraint firstItem="YdU-hB-xRg" firstAttribute="top" secondItem="QSv-JC-y1F" secondAttribute="bottom" constant="59" id="xav-D7-y29"/>
+                            <constraint firstItem="ueg-gW-FvP" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="68" id="3E6-m1-ySI"/>
+                            <constraint firstItem="Ibl-bQ-x05" firstAttribute="centerX" secondItem="Uun-Gx-Cxe" secondAttribute="centerX" id="69h-so-5QY"/>
+                            <constraint firstItem="roY-U6-Tg2" firstAttribute="centerX" secondItem="QSv-JC-y1F" secondAttribute="centerX" id="Ab4-TJ-Bq7"/>
+                            <constraint firstItem="Vio-Od-1rG" firstAttribute="bottom" secondItem="YdU-hB-xRg" secondAttribute="bottom" constant="60" id="BWB-s5-ObX"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="centerX" secondItem="XLe-8L-MW6" secondAttribute="centerX" id="Ehl-g4-Rn7"/>
+                            <constraint firstItem="ueg-gW-FvP" firstAttribute="top" secondItem="Ibl-bQ-x05" secondAttribute="bottom" constant="30" id="Eqn-4E-Fzw"/>
+                            <constraint firstItem="Ibl-bQ-x05" firstAttribute="top" secondItem="Uun-Gx-Cxe" secondAttribute="bottom" constant="25" id="GMZ-ey-895"/>
+                            <constraint firstItem="ueg-gW-FvP" firstAttribute="centerX" secondItem="Uun-Gx-Cxe" secondAttribute="centerX" id="Ol3-GT-vVY"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="top" secondItem="XLe-8L-MW6" secondAttribute="bottom" constant="30" id="OwO-Sl-Op9"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="68" id="QN9-4d-41N"/>
+                            <constraint firstItem="Vio-Od-1rG" firstAttribute="trailing" secondItem="YdU-hB-xRg" secondAttribute="trailing" constant="47" id="XVG-nt-Wdl"/>
+                            <constraint firstItem="Ibl-bQ-x05" firstAttribute="centerX" secondItem="d9h-kv-m2g" secondAttribute="centerX" id="ZIz-wU-1bK"/>
+                            <constraint firstItem="YdU-hB-xRg" firstAttribute="top" secondItem="roY-U6-Tg2" secondAttribute="bottom" constant="38" id="Zji-Xz-tiM"/>
+                            <constraint firstItem="YdU-hB-xRg" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="52" id="cma-fe-5LP"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="top" secondItem="ueg-gW-FvP" secondAttribute="bottom" constant="30" id="l63-1o-186"/>
+                            <constraint firstItem="Uun-Gx-Cxe" firstAttribute="top" secondItem="Vio-Od-1rG" secondAttribute="top" constant="27" id="mq4-7q-Mbr"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="centerX" secondItem="ueg-gW-FvP" secondAttribute="centerX" id="o3n-pU-JZq"/>
+                            <constraint firstItem="Ibl-bQ-x05" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="68" id="qRI-sc-Yr5"/>
+                            <constraint firstItem="roY-U6-Tg2" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="68" id="rZi-vK-M6O"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="68" id="uVl-5N-bdF"/>
+                            <constraint firstItem="roY-U6-Tg2" firstAttribute="top" secondItem="QSv-JC-y1F" secondAttribute="bottom" constant="30" id="xbK-In-leA"/>
                         </constraints>
+                        <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
                         <viewLayoutGuide key="safeArea" id="Vio-Od-1rG"/>
                     </view>
+                    <connections>
+                        <outlet property="labelInfoMazda" destination="YdU-hB-xRg" id="h8p-1B-xmN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAZ-JC-WNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
