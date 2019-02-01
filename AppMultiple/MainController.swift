@@ -33,7 +33,9 @@ class MainController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainIdentifier", for: indexPath)
         // Configure the cell...
-        cell.textLabel?.text = arrayClass[indexPath.row]
+        let indexMenu = indexPath.row
+        let nameMenu = arrayClass[indexPath.row]
+        cell.textLabel?.text = "\(indexMenu + 1) - \(nameMenu)"
         return cell
     }
  

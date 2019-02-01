@@ -16,6 +16,9 @@
 		30CFC58D2204DDAF002AE8AB /* Mazda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC58C2204DDAF002AE8AB /* Mazda.swift */; };
 		30CFC58F2204EBB8002AE8AB /* Mazda3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC58E2204EBB8002AE8AB /* Mazda3.swift */; };
 		30CFC5912204F45F002AE8AB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5902204F45F002AE8AB /* TableViewController.swift */; };
+		30CFC59F2204FA39002AE8AB /* Libro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30CFC59E2204FA39002AE8AB /* Libro.jpg */; };
+		30CFC5A12204FAA8002AE8AB /* PDF in Resources */ = {isa = PBXBuildFile; fileRef = 30CFC5A02204FAA8002AE8AB /* PDF */; };
+		30CFC5A32204FB2D002AE8AB /* ViewPdfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5A22204FB2D002AE8AB /* ViewPdfController.swift */; };
 		30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDE21A2204AB8B008584F1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		30CFC58C2204DDAF002AE8AB /* Mazda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazda.swift; sourceTree = "<group>"; };
 		30CFC58E2204EBB8002AE8AB /* Mazda3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazda3.swift; sourceTree = "<group>"; };
 		30CFC5902204F45F002AE8AB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		30CFC59E2204FA39002AE8AB /* Libro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Libro.jpg; sourceTree = "<group>"; };
+		30CFC5A02204FAA8002AE8AB /* PDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PDF; sourceTree = "<group>"; };
+		30CFC5A22204FB2D002AE8AB /* ViewPdfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPdfController.swift; sourceTree = "<group>"; };
 		30EDE21A2204AB8B008584F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +75,8 @@
 				302DDC092204161800204A43 /* AppDelegate.swift */,
 				3043BD9F2204A6FD004A4951 /* MainController.swift */,
 				302DDC0D2204161800204A43 /* Main.storyboard */,
+				30CFC59E2204FA39002AE8AB /* Libro.jpg */,
+				30CFC5A02204FAA8002AE8AB /* PDF */,
 				302DDC102204161A00204A43 /* Assets.xcassets */,
 				302DDC122204161A00204A43 /* LaunchScreen.storyboard */,
 				302DDC152204161A00204A43 /* Info.plist */,
@@ -82,6 +90,7 @@
 				30EDE21A2204AB8B008584F1 /* ViewController.swift */,
 				30CFC5882204AFA2002AE8AB /* MazdaController.swift */,
 				30CFC5902204F45F002AE8AB /* TableViewController.swift */,
+				30CFC5A22204FB2D002AE8AB /* ViewPdfController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +162,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CFC5A12204FAA8002AE8AB /* PDF in Resources */,
+				30CFC59F2204FA39002AE8AB /* Libro.jpg in Resources */,
 				302DDC142204161A00204A43 /* LaunchScreen.storyboard in Resources */,
 				302DDC112204161A00204A43 /* Assets.xcassets in Resources */,
 				302DDC0F2204161800204A43 /* Main.storyboard in Resources */,
@@ -169,6 +180,7 @@
 				30CFC58D2204DDAF002AE8AB /* Mazda.swift in Sources */,
 				30CFC5912204F45F002AE8AB /* TableViewController.swift in Sources */,
 				30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */,
+				30CFC5A32204FB2D002AE8AB /* ViewPdfController.swift in Sources */,
 				30CFC5892204AFA2002AE8AB /* MazdaController.swift in Sources */,
 				30CFC58F2204EBB8002AE8AB /* Mazda3.swift in Sources */,
 				3043BDA02204A6FD004A4951 /* MainController.swift in Sources */,
