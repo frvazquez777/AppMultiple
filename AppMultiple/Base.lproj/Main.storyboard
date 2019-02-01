@@ -80,13 +80,94 @@
                     <view key="view" contentMode="scaleToFill" id="d9h-kv-m2g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibl-bQ-x05">
+                                <rect key="frame" x="52" y="200" width="271" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="caY-TQ-jVL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Crear Mazda">
+                                    <color key="titleColor" red="0.69192161425254994" green="0.90607175035506049" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueg-gW-FvP">
+                                <rect key="frame" x="52" y="270" width="271" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Propiedades Mazda">
+                                    <color key="titleColor" red="0.69192161429999999" green="0.90607175039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLe-8L-MW6">
+                                <rect key="frame" x="52" y="340" width="271" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gr1-Q6-hIq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Enceder Mazda">
+                                    <color key="titleColor" red="0.69192161429999999" green="0.90607175039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSv-JC-y1F">
+                                <rect key="frame" x="52" y="410" width="271" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Acelerar Mazda">
+                                    <color key="titleColor" red="0.69192161429999999" green="0.90607175039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info. Mazda" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdU-hB-xRg">
+                                <rect key="frame" x="52" y="509" width="89" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1Yh-0k-0Mt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAZDA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uun-Gx-Cxe">
+                                <rect key="frame" x="140" y="116" width="73" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="centerX" secondItem="Ibl-bQ-x05" secondAttribute="centerX" id="0dG-kK-ru7"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ueg-gW-FvP" secondAttribute="trailing" id="17h-uh-Og9"/>
+                            <constraint firstItem="Uun-Gx-Cxe" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="140" id="189-9d-suo"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XLe-8L-MW6" secondAttribute="leading" id="8Vh-U2-QdU"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="centerX" secondItem="d9h-kv-m2g" secondAttribute="centerX" id="B1T-TO-ba6"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="leading" secondItem="YdU-hB-xRg" secondAttribute="leading" id="Fat-M4-Nxj"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ibl-bQ-x05" secondAttribute="leading" id="IRl-PF-jaL"/>
+                            <constraint firstItem="Vio-Od-1rG" firstAttribute="bottom" secondItem="YdU-hB-xRg" secondAttribute="bottom" constant="137" id="Iq7-gV-eb9"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="leading" secondItem="Vio-Od-1rG" secondAttribute="leading" constant="52" id="Paa-iz-ACk"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ibl-bQ-x05" secondAttribute="trailing" id="QLd-Da-WEx"/>
+                            <constraint firstItem="Ibl-bQ-x05" firstAttribute="top" secondItem="Uun-Gx-Cxe" secondAttribute="bottom" constant="60" id="TXh-EZ-uGA"/>
+                            <constraint firstItem="Uun-Gx-Cxe" firstAttribute="top" secondItem="Vio-Od-1rG" secondAttribute="top" constant="52" id="XVX-Dz-6I1"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ueg-gW-FvP" secondAttribute="leading" id="avl-jd-LB6"/>
+                            <constraint firstItem="Vio-Od-1rG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YdU-hB-xRg" secondAttribute="trailing" symbolic="YES" id="e6a-Es-mz5"/>
+                            <constraint firstAttribute="bottom" secondItem="XLe-8L-MW6" secondAttribute="bottom" constant="287" id="ehT-9k-V7T"/>
+                            <constraint firstItem="ueg-gW-FvP" firstAttribute="top" secondItem="Ibl-bQ-x05" secondAttribute="bottom" constant="30" id="f12-bg-I9x"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YdU-hB-xRg" secondAttribute="leading" id="gCk-2H-IrC"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vio-Od-1rG" secondAttribute="leading" id="hLy-1y-Yeg"/>
+                            <constraint firstItem="Vio-Od-1rG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Uun-Gx-Cxe" secondAttribute="trailing" symbolic="YES" id="mCd-rv-4iS"/>
+                            <constraint firstItem="XLe-8L-MW6" firstAttribute="top" secondItem="ueg-gW-FvP" secondAttribute="bottom" constant="30" id="pVX-59-3tw"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="centerX" secondItem="ueg-gW-FvP" secondAttribute="centerX" id="rPc-fd-AWc"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XLe-8L-MW6" secondAttribute="trailing" id="tQB-Vg-KZl"/>
+                            <constraint firstItem="QSv-JC-y1F" firstAttribute="top" secondItem="XLe-8L-MW6" secondAttribute="bottom" constant="30" id="xKc-em-GGc"/>
+                            <constraint firstItem="YdU-hB-xRg" firstAttribute="top" secondItem="QSv-JC-y1F" secondAttribute="bottom" constant="59" id="xav-D7-y29"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vio-Od-1rG"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAZ-JC-WNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2682" y="513"/>
+            <point key="canvasLocation" x="2680.8000000000002" y="512.29385307346331"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8pM-xh-wbB">

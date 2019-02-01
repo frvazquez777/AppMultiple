@@ -55,6 +55,9 @@ class MainController: UITableViewController {
             let segueViewController: ViewController = segue.destination as! ViewController
             segueViewController.valueReceived = segueIdentifier
             break
+        case 1:
+            let _ : MazdaController = segue.destination as! MazdaController
+            break
         default:
             break
         }
@@ -63,7 +66,7 @@ class MainController: UITableViewController {
     func getSegueValidation(_ segueValue: Int) -> Bool {
         var validation = false;
         switch segueValue {
-        case 0:
+        case 0, 1:
             validation = true
             break
         default:
