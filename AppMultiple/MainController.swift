@@ -10,7 +10,7 @@ import UIKit
 
 class MainController: UITableViewController {
 
-    var arrayClass = ["View", "Mazda"]
+    var arrayClass = ["View", "Mazda", "TableView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +58,8 @@ class MainController: UITableViewController {
         case 1:
             let _ : MazdaController = segue.destination as! MazdaController
             break
+        case 2:
+            let _ : TableViewController = segue.destination as! TableViewController
         default:
             break
         }
@@ -66,7 +68,7 @@ class MainController: UITableViewController {
     func getSegueValidation(_ segueValue: Int) -> Bool {
         var validation = false;
         switch segueValue {
-        case 0, 1:
+        case 0, 1, 2:
             validation = true
             break
         default:

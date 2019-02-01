@@ -15,6 +15,7 @@
 		30CFC5892204AFA2002AE8AB /* MazdaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5882204AFA2002AE8AB /* MazdaController.swift */; };
 		30CFC58D2204DDAF002AE8AB /* Mazda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC58C2204DDAF002AE8AB /* Mazda.swift */; };
 		30CFC58F2204EBB8002AE8AB /* Mazda3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC58E2204EBB8002AE8AB /* Mazda3.swift */; };
+		30CFC5912204F45F002AE8AB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5902204F45F002AE8AB /* TableViewController.swift */; };
 		30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDE21A2204AB8B008584F1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		30CFC5882204AFA2002AE8AB /* MazdaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazdaController.swift; sourceTree = "<group>"; };
 		30CFC58C2204DDAF002AE8AB /* Mazda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazda.swift; sourceTree = "<group>"; };
 		30CFC58E2204EBB8002AE8AB /* Mazda3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazda3.swift; sourceTree = "<group>"; };
+		30CFC5902204F45F002AE8AB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		30EDE21A2204AB8B008584F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 			children = (
 				30EDE21A2204AB8B008584F1 /* ViewController.swift */,
 				30CFC5882204AFA2002AE8AB /* MazdaController.swift */,
+				30CFC5902204F45F002AE8AB /* TableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30CFC58D2204DDAF002AE8AB /* Mazda.swift in Sources */,
+				30CFC5912204F45F002AE8AB /* TableViewController.swift in Sources */,
 				30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */,
 				30CFC5892204AFA2002AE8AB /* MazdaController.swift in Sources */,
 				30CFC58F2204EBB8002AE8AB /* Mazda3.swift in Sources */,
