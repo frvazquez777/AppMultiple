@@ -10,7 +10,7 @@ import UIKit
 
 class MainController: UITableViewController {
 
-    var arrayClass = ["View", "Mazda", "TableView", "WebService"]
+    var arrayClass = ["View", "Mazda", "TableView", "WebService", "AppDictionary"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +65,10 @@ class MainController: UITableViewController {
             break
         case 3:
             let _ : WebServiceController = segue.destination as! WebServiceController
+            break
+        case 4:
+            let _ : AppDictionaryController = segue.destination as! AppDictionaryController
+            break
         default:
             break
         }
@@ -73,7 +77,7 @@ class MainController: UITableViewController {
     func getSegueValidation(_ segueValue: Int) -> Bool {
         var validation = false;
         switch segueValue {
-        case 0, 1, 2, 3:
+        case 0, 1, 2, 3, 4:
             validation = true
             break
         default:
