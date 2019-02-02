@@ -19,6 +19,7 @@
 		30CFC59F2204FA39002AE8AB /* Libro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30CFC59E2204FA39002AE8AB /* Libro.jpg */; };
 		30CFC5A12204FAA8002AE8AB /* PDF in Resources */ = {isa = PBXBuildFile; fileRef = 30CFC5A02204FAA8002AE8AB /* PDF */; };
 		30CFC5A32204FB2D002AE8AB /* ViewPdfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5A22204FB2D002AE8AB /* ViewPdfController.swift */; };
+		30CFC5A522050FCA002AE8AB /* WebServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5A422050FCA002AE8AB /* WebServiceController.swift */; };
 		30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDE21A2204AB8B008584F1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		30CFC59E2204FA39002AE8AB /* Libro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Libro.jpg; sourceTree = "<group>"; };
 		30CFC5A02204FAA8002AE8AB /* PDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PDF; sourceTree = "<group>"; };
 		30CFC5A22204FB2D002AE8AB /* ViewPdfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPdfController.swift; sourceTree = "<group>"; };
+		30CFC5A422050FCA002AE8AB /* WebServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceController.swift; sourceTree = "<group>"; };
 		30EDE21A2204AB8B008584F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				30CFC5882204AFA2002AE8AB /* MazdaController.swift */,
 				30CFC5902204F45F002AE8AB /* TableViewController.swift */,
 				30CFC5A22204FB2D002AE8AB /* ViewPdfController.swift */,
+				30CFC5A422050FCA002AE8AB /* WebServiceController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				30CFC5A32204FB2D002AE8AB /* ViewPdfController.swift in Sources */,
 				30CFC5892204AFA2002AE8AB /* MazdaController.swift in Sources */,
 				30CFC58F2204EBB8002AE8AB /* Mazda3.swift in Sources */,
+				30CFC5A522050FCA002AE8AB /* WebServiceController.swift in Sources */,
 				3043BDA02204A6FD004A4951 /* MainController.swift in Sources */,
 				302DDC0A2204161800204A43 /* AppDelegate.swift in Sources */,
 			);

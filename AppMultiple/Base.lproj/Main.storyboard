@@ -38,6 +38,7 @@
                         <segue destination="0d3-6X-i2O" kind="show" identifier="SegueViewController" id="pQn-TL-799"/>
                         <segue destination="xFM-I4-6uf" kind="show" identifier="SegueMazdaController" id="roS-SF-iCy"/>
                         <segue destination="qDn-E9-fag" kind="show" identifier="SegueTableViewController" id="asR-e2-hQ1"/>
+                        <segue destination="Oc7-DT-gKM" kind="show" identifier="SegueWebServiceController" id="srR-C3-uuW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mV6-r9-ZFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -72,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AhM-Ul-crJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866" y="193"/>
+            <point key="canvasLocation" x="2916" y="-376"/>
         </scene>
         <!--Mazda Controller-->
         <scene sceneID="FYR-iH-bOf">
@@ -201,7 +202,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAZ-JC-WNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680.8000000000002" y="512.29385307346331"/>
+            <point key="canvasLocation" x="2916" y="357"/>
+        </scene>
+        <!--Web Service Controller-->
+        <scene sceneID="Opf-Hd-kp8">
+            <objects>
+                <viewController id="Oc7-DT-gKM" customClass="WebServiceController" customModule="AppMultiple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gMb-Nd-6oR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvU-Jj-SXw">
+                                <rect key="frame" x="16" y="92" width="343" height="404"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tNa-tY-hV7"/>
+                    </view>
+                    <connections>
+                        <outlet property="webService" destination="wvU-Jj-SXw" id="83M-Oi-LJQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5I-eA-905" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="1160"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="FmF-2X-VIe">
@@ -232,7 +262,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLg-NW-M87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2681" y="1189"/>
+            <point key="canvasLocation" x="3954" y="786"/>
         </scene>
         <!--View Pdf Controller-->
         <scene sceneID="SIf-Vx-8ZE">
@@ -253,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBU-gY-ICR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3558" y="995"/>
+            <point key="canvasLocation" x="4820" y="786"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8pM-xh-wbB">
