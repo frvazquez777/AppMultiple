@@ -213,23 +213,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mCz-qa-C3X">
-                                <rect key="frame" x="16" y="72" width="343" height="211"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCz-qa-C3X">
+                                <rect key="frame" x="16" y="150" width="343" height="319"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="319" id="0K9-8i-rVf"/>
+                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nR-5S-AwE">
+                                <rect key="frame" x="86" y="558" width="203" height="41"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="iVc-VW-XY4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="SEARCH">
+                                    <color key="titleColor" red="0.69192161429999999" green="0.90607175039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getSearch:" destination="6Be-ze-wSu" eventType="touchUpInside" id="Dws-xn-5rX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAB-aA-7KT">
+                                <rect key="frame" x="16" y="488" width="343" height="47"/>
+                                <color key="backgroundColor" red="0.92734184740000003" green="0.96080166099999997" blue="0.94752784479999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Dictionary Wiki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuS-c0-FGR">
+                                <rect key="frame" x="80" y="107" width="215" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hAB-aA-7KT" firstAttribute="leading" secondItem="mCz-qa-C3X" secondAttribute="leading" id="C90-wt-YX5"/>
+                            <constraint firstItem="ZuS-c0-FGR" firstAttribute="centerX" secondItem="hAB-aA-7KT" secondAttribute="centerX" id="P9H-eN-iNK"/>
+                            <constraint firstItem="c7S-Sp-KQb" firstAttribute="bottom" secondItem="0nR-5S-AwE" secondAttribute="bottom" constant="68" id="R0V-w0-Pm9"/>
+                            <constraint firstItem="ZuS-c0-FGR" firstAttribute="top" secondItem="c7S-Sp-KQb" secondAttribute="top" constant="43" id="VFh-sR-Ege"/>
+                            <constraint firstItem="mCz-qa-C3X" firstAttribute="top" secondItem="c7S-Sp-KQb" secondAttribute="top" constant="86" id="Wls-Yl-JBd"/>
+                            <constraint firstItem="ZuS-c0-FGR" firstAttribute="leading" secondItem="c7S-Sp-KQb" secondAttribute="leading" constant="80" id="YBy-I1-2uV"/>
+                            <constraint firstItem="mCz-qa-C3X" firstAttribute="leading" secondItem="UVf-9M-wPd" secondAttribute="leadingMargin" id="isZ-Iw-q4w"/>
+                            <constraint firstItem="0nR-5S-AwE" firstAttribute="leading" secondItem="c7S-Sp-KQb" secondAttribute="leading" constant="86" id="pfc-wo-ehl"/>
+                            <constraint firstItem="0nR-5S-AwE" firstAttribute="top" secondItem="hAB-aA-7KT" secondAttribute="bottom" constant="23" id="pp8-eR-Dzy"/>
+                            <constraint firstItem="hAB-aA-7KT" firstAttribute="top" secondItem="mCz-qa-C3X" secondAttribute="bottom" constant="19" id="syr-MB-yrg"/>
+                            <constraint firstItem="0nR-5S-AwE" firstAttribute="centerX" secondItem="UVf-9M-wPd" secondAttribute="centerX" id="vz9-44-qlL"/>
+                            <constraint firstItem="ZuS-c0-FGR" firstAttribute="centerX" secondItem="mCz-qa-C3X" secondAttribute="centerX" id="ynq-y2-Blo"/>
+                            <constraint firstItem="0nR-5S-AwE" firstAttribute="centerX" secondItem="mCz-qa-C3X" secondAttribute="centerX" id="zaX-t2-sLx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c7S-Sp-KQb"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="hAB-aA-7KT" id="T84-x6-tAb"/>
+                        <outlet property="webView" destination="mCz-qa-C3X" id="9ik-vt-r1e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7O-Qg-eHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2916" y="1961"/>
+            <point key="canvasLocation" x="2916" y="1960.569715142429"/>
         </scene>
         <!--Web Service Controller-->
         <scene sceneID="Opf-Hd-kp8">
