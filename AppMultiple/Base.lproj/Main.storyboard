@@ -231,7 +231,7 @@
                     </tableView>
                     <connections>
                         <segue destination="GNr-V1-cfZ" kind="show" identifier="SegueAutoLayoutLabels" id="Dpb-AY-I61"/>
-                        <segue destination="IrI-gr-6fz" kind="show" identifier="SegueAutoLayoutProject" id="ogI-lt-N9D"/>
+                        <segue destination="IrI-gr-6fz" kind="show" identifier="SegueAutoLayoutConstraints" id="ogI-lt-N9D"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVl-3J-Ikc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -314,32 +314,49 @@
             </objects>
             <point key="canvasLocation" x="4908" y="1680"/>
         </scene>
-        <!--View Controller-->
+        <!--Auto Layout View Controller-->
         <scene sceneID="GaK-gh-tro">
             <objects>
-                <viewController id="IrI-gr-6fz" sceneMemberID="viewController">
+                <viewController id="IrI-gr-6fz" customClass="AutoLayoutViewController" customModule="AppMultiple" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lh9-66-myO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ey-1s-ZzL">
-                                <rect key="frame" x="135" y="125" width="105" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gtn-bh-WAe">
+                                <rect key="frame" x="59" y="119" width="256" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.71052652039999997" blue="0.46588542389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHD-dU-ePu">
+                                <rect key="frame" x="59" y="302" width="256" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.61388947957799489" green="1" blue="0.26128071221591198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IH-O9-NPd">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.37199067320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ROF-pf-FFB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8Ey-1s-ZzL" firstAttribute="centerX" secondItem="Lh9-66-myO" secondAttribute="centerX" id="KHi-S6-6X5"/>
-                            <constraint firstItem="8Ey-1s-ZzL" firstAttribute="top" secondItem="kjb-ZM-wwa" secondAttribute="top" constant="61" id="iwb-Uk-aRg"/>
+                            <constraint firstItem="kjb-ZM-wwa" firstAttribute="trailing" secondItem="4IH-O9-NPd" secondAttribute="trailing" id="9CO-89-L6Z"/>
+                            <constraint firstItem="4IH-O9-NPd" firstAttribute="leading" secondItem="kjb-ZM-wwa" secondAttribute="leading" id="RCJ-iw-Lqv"/>
+                            <constraint firstItem="kjb-ZM-wwa" firstAttribute="bottom" secondItem="4IH-O9-NPd" secondAttribute="bottom" id="X8H-Bi-XRP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kjb-ZM-wwa"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomRedView" destination="X8H-Bi-XRP" id="W0w-CH-4Tc"/>
+                        <outlet property="greenView" destination="lHD-dU-ePu" id="wHe-7y-1Fk"/>
+                        <outlet property="orangeView" destination="gtn-bh-WAe" id="2cM-Wx-StV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQ8-9O-U2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4907" y="2376"/>
+            <point key="canvasLocation" x="4906.3999999999996" y="2375.2623688155923"/>
         </scene>
         <!--App Dictionary Controller-->
         <scene sceneID="rLk-Ez-Hbp">

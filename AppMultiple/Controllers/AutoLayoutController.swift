@@ -10,7 +10,7 @@ import UIKit
 
 class AutoLayoutController: UITableViewController {
 
-    var arrayAutoLayout = ["Labels", "Project"]
+    var arrayAutoLayout = ["Labels", "Constraints"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,7 @@ class AutoLayoutController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let idOption = indexPath.row
         let nameSegue = "SegueAutoLayout\(arrayAutoLayout[idOption])"
+        print("SegueAutoLayoutConstraints - \(nameSegue)")
         self.performSegue(withIdentifier: nameSegue, sender: idOption)
     }
     
