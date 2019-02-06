@@ -10,7 +10,7 @@ import UIKit
 
 class AutoLayoutController: UITableViewController {
 
-    var arrayAutoLayout = ["Labels", "Constraints"]
+    var arrayAutoLayout = ["Labels", "Constraints", "CodeContraints"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,8 +17,6 @@ class TableViewController: UITableViewController {
         print("TableViewController Init")
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -28,7 +26,6 @@ class TableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return arrayPDF.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellPdf", for: indexPath)
@@ -38,8 +35,6 @@ class TableViewController: UITableViewController {
         cell.imageView!.image = UIImage(named: "Libro.jpg")
         return cell
     }
-    
-
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -59,7 +54,6 @@ class TableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let idOption = sender as! Int
-        
         let segueViewPdfController: ViewPdfController = segue.destination as! ViewPdfController
         segueViewPdfController.namePdf = arrayPDF[idOption]
       

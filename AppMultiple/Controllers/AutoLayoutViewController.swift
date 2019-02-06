@@ -21,12 +21,10 @@ class AutoLayoutViewController: UIViewController {
 
         orangeView.translatesAutoresizingMaskIntoConstraints = false
         greenView.translatesAutoresizingMaskIntoConstraints = false
-        
         setAutoLayout()
         setAutoDesign()
         
     }
-
     
     func setAutoDesign() {
         let widthConstrains = greenView.widthAnchor.constraint(equalToConstant: 200)
@@ -39,11 +37,10 @@ class AutoLayoutViewController: UIViewController {
     }
     
     func setAutoLayout() {
-        
         let leadingCOnstraints = orangeView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 100)
         let trailingConstraints = orangeView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -100)
         let topConstraints = orangeView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100)
-        let bottomConstraints = orangeView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -100)
+        let bottomConstraints = orangeView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -200)
         
         constraintsValues.append(contentsOf: [leadingCOnstraints, trailingConstraints, topConstraints, bottomConstraints])
         
