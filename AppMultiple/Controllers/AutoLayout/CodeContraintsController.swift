@@ -25,6 +25,7 @@ class CodeContraintsController: UIViewController {
         getTopRightLabel()
         getBottomLeftLabel()
         getBottomRightLabel()
+        
         NSLayoutConstraint.activate(contraints)
 
     }
@@ -49,10 +50,10 @@ class CodeContraintsController: UIViewController {
         
         let topContraints = topLeftLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 70)
         let leadingContraints = topLeftLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20)
-        let widthContraintsTL = topLeftLabel.widthAnchor.constraint(equalToConstant: 70)
-        let heightContraintsTL = topLeftLabel.heightAnchor.constraint(equalToConstant: 15)
+        let widthContraints = topLeftLabel.widthAnchor.constraint(equalToConstant: 70)
+        let heightContraints = topLeftLabel.heightAnchor.constraint(equalToConstant: 15)
         
-        contraints.append(contentsOf: [topContraints, leadingContraints, widthContraintsTL, heightContraintsTL])
+        contraints.append(contentsOf: [topContraints, leadingContraints, widthContraints, heightContraints])
         
     }
     
@@ -67,10 +68,10 @@ class CodeContraintsController: UIViewController {
         
         let topContraints = topRightLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 70)
         let leadingContraints = topRightLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 240)
-        let widthContraintsTL = topRightLabel.widthAnchor.constraint(equalToConstant: 80)
-        let heightContraintsTL = topRightLabel.heightAnchor.constraint(equalToConstant: 15)
+        let widthContraints = topRightLabel.widthAnchor.constraint(equalToConstant: 80)
+        let heightContraints = topRightLabel.heightAnchor.constraint(equalToConstant: 15)
         
-        contraints.append(contentsOf: [topContraints, leadingContraints, widthContraintsTL, heightContraintsTL])
+        contraints.append(contentsOf: [topContraints, leadingContraints, widthContraints, heightContraints])
         
     }
     
@@ -85,10 +86,10 @@ class CodeContraintsController: UIViewController {
         
         let bottomContraints = bottomLeftLabel.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0)
         let leadingContraints = bottomLeftLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20)
-        let widthContraintsTL = bottomLeftLabel.widthAnchor.constraint(equalToConstant: 110)
-        let heightContraintsTL = bottomLeftLabel.heightAnchor.constraint(equalToConstant: 15)
+        let widthContraints = bottomLeftLabel.widthAnchor.constraint(equalToConstant: 110)
+        let heightContraints = bottomLeftLabel.heightAnchor.constraint(equalToConstant: 15)
         
-        contraints.append(contentsOf: [bottomContraints, leadingContraints, widthContraintsTL, heightContraintsTL])
+        contraints.append(contentsOf: [bottomContraints, leadingContraints, widthContraints, heightContraints])
         
     }
     
@@ -103,10 +104,10 @@ class CodeContraintsController: UIViewController {
         
         let bottomContraints = bottomRightLabel.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0)
         let leadingContraints = bottomRightLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 240)
-        let widthContraintsTL = bottomRightLabel.widthAnchor.constraint(equalToConstant: 110)
-        let heightContraintsTL = bottomRightLabel.heightAnchor.constraint(equalToConstant: 15)
+        let widthContraints = bottomRightLabel.widthAnchor.constraint(equalToConstant: 110)
+        let heightContraints = bottomRightLabel.heightAnchor.constraint(equalToConstant: 15)
         
-        contraints.append(contentsOf: [bottomContraints, leadingContraints, widthContraintsTL, heightContraintsTL])
+        contraints.append(contentsOf: [bottomContraints, leadingContraints, widthContraints, heightContraints])
     }
     
 }
