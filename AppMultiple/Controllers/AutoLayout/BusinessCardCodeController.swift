@@ -13,6 +13,7 @@ class BusinessCardCodeController: UIViewController {
     let imagenPerfil  = UIImageView()
     var constraints = [NSLayoutConstraint]()
     let nameLabel = UILabel()
+    let emailLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class BusinessCardCodeController: UIViewController {
         
         createImage(nameImage: "lion")
         getName(name: "LION RED")
+        crearEmailyAgregarAutolayout(email: "crazzy-rock@live.com.mx")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,6 +67,28 @@ class BusinessCardCodeController: UIViewController {
         constraints.append(trailingConstraints)
         constraints.append(topConstraints)
         constraints.append(heigntConstraints)
+        
+    }
+    
+    func crearEmailyAgregarAutolayout (email : String) {
+        
+        emailLabel.text = email
+        emailLabel.textColor = UIColor.black
+        emailLabel.translatesAutoresizingMaskIntoConstraints = false
+        emailLabel.textAlignment = NSTextAlignment.right
+        emailLabel.font = UIFont(name: "Avenir Next", size: 17)
+        self.view.addSubview(emailLabel)
+        
+        let leadingConstraint = emailLabel.leadingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 8)
+        let trailingConstraint = emailLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 8)
+        
+        let heightConstraint = emailLabel.heightAnchor.constraint(equalToConstant: 20)
+        let bottomConstraint = emailLabel.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0)
+        
+        constraints.append(leadingConstraint)
+        constraints.append(trailingConstraint)
+        constraints.append(heightConstraint)
+        constraints.append(bottomConstraint)
         
     }
 }
