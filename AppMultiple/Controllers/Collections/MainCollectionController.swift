@@ -10,7 +10,7 @@ import UIKit
 
 class MainCollectionController: UITableViewController {
     
-    var arrayCollections = ["CollectionBasic", "CollectionsPhoto"]
+    var arrayCollections = ["CollectionBasic", "CollectionsPhoto", "MenuComida"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
