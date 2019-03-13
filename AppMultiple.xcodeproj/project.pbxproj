@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301FA2C322124B5900AC76E3 /* MainCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FA2C222124B5900AC76E3 /* MainCollectionController.swift */; };
+		301FA2C52213278B00AC76E3 /* CollectionBasicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FA2C42213278B00AC76E3 /* CollectionBasicController.swift */; };
 		302DDC0A2204161800204A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302DDC092204161800204A43 /* AppDelegate.swift */; };
 		302DDC0F2204161800204A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302DDC0D2204161800204A43 /* Main.storyboard */; };
 		302DDC112204161A00204A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302DDC102204161A00204A43 /* Assets.xcassets */; };
@@ -26,10 +28,14 @@
 		30CFC5A32204FB2D002AE8AB /* ViewPdfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5A22204FB2D002AE8AB /* ViewPdfController.swift */; };
 		30CFC5A522050FCA002AE8AB /* WebServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5A422050FCA002AE8AB /* WebServiceController.swift */; };
 		30CFC5A722052145002AE8AB /* AppDictionaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC5A622052145002AE8AB /* AppDictionaryController.swift */; };
+		30E41F38223973B400070009 /* CollectionsPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E41F37223973B400070009 /* CollectionsPhotoController.swift */; };
+		30E41F3C223978B200070009 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E41F3B223978B200070009 /* ImageCollectionViewCell.swift */; };
 		30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDE21A2204AB8B008584F1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301FA2C222124B5900AC76E3 /* MainCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionController.swift; sourceTree = "<group>"; };
+		301FA2C42213278B00AC76E3 /* CollectionBasicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBasicController.swift; sourceTree = "<group>"; };
 		302DDC062204161800204A43 /* AppMultiple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMultiple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		302DDC092204161800204A43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		302DDC0E2204161800204A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		30CFC5A22204FB2D002AE8AB /* ViewPdfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPdfController.swift; sourceTree = "<group>"; };
 		30CFC5A422050FCA002AE8AB /* WebServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceController.swift; sourceTree = "<group>"; };
 		30CFC5A622052145002AE8AB /* AppDictionaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDictionaryController.swift; sourceTree = "<group>"; };
+		30E41F37223973B400070009 /* CollectionsPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsPhotoController.swift; sourceTree = "<group>"; };
+		30E41F3B223978B200070009 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		30EDE21A2204AB8B008584F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +73,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301FA2C122124B3100AC76E3 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				301FA2C222124B5900AC76E3 /* MainCollectionController.swift */,
+				301FA2C42213278B00AC76E3 /* CollectionBasicController.swift */,
+				30E41F37223973B400070009 /* CollectionsPhotoController.swift */,
+				30E41F3B223978B200070009 /* ImageCollectionViewCell.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		302DDBFD2204161800204A43 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +120,7 @@
 		3043BD9E2204A6CE004A4951 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				301FA2C122124B3100AC76E3 /* Collections */,
 				309AFBBD220B9EC8002189F4 /* Example */,
 				309AFBBE220B9F0A002189F4 /* Mazda */,
 				309AFBBF220B9F1F002189F4 /* TableView */,
@@ -240,19 +260,23 @@
 			files = (
 				309AFBBC220B4B54002189F4 /* CodeContraintsController.swift in Sources */,
 				30CFC58D2204DDAF002AE8AB /* Mazda.swift in Sources */,
+				301FA2C52213278B00AC76E3 /* CollectionBasicController.swift in Sources */,
 				309AFBC5220CA232002189F4 /* BusinessCardCodeController.swift in Sources */,
 				30CFC5912204F45F002AE8AB /* TableViewController.swift in Sources */,
 				30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */,
 				30CFC5A32204FB2D002AE8AB /* ViewPdfController.swift in Sources */,
 				30CFC5892204AFA2002AE8AB /* MazdaController.swift in Sources */,
 				30CFC58F2204EBB8002AE8AB /* Mazda3.swift in Sources */,
+				301FA2C322124B5900AC76E3 /* MainCollectionController.swift in Sources */,
 				30CFC5A522050FCA002AE8AB /* WebServiceController.swift in Sources */,
 				3043BDA02204A6FD004A4951 /* MainController.swift in Sources */,
 				30A6DFB9220A2A180017A84C /* AutoLayoutController.swift in Sources */,
 				309AFBC3220C943E002189F4 /* TarjetaPresentacionController.swift in Sources */,
 				302DDC0A2204161800204A43 /* AppDelegate.swift in Sources */,
 				30CFC5A722052145002AE8AB /* AppDictionaryController.swift in Sources */,
+				30E41F38223973B400070009 /* CollectionsPhotoController.swift in Sources */,
 				309AFBBA220A4E60002189F4 /* AutoLayoutViewController.swift in Sources */,
+				30E41F3C223978B200070009 /* ImageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
