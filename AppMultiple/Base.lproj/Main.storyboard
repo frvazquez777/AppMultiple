@@ -42,11 +42,81 @@
                         <segue destination="6Be-ze-wSu" kind="show" identifier="SegueAppDictionaryController" id="SUP-LU-T2s"/>
                         <segue destination="SB1-bM-MNB" kind="show" identifier="SegueAutoLayoutController" id="uBX-DL-HWz"/>
                         <segue destination="BIh-pz-8H8" kind="show" identifier="SegueCollectionController" id="LeA-Yi-qmV"/>
+                        <segue destination="pTl-n7-byW" kind="show" identifier="SegueMachineLearningController" id="kbD-Hl-fCi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mV6-r9-ZFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988" y="786"/>
+        </scene>
+        <!--App Image Controller-->
+        <scene sceneID="IkR-ef-hty">
+            <objects>
+                <viewController id="pTl-n7-byW" customClass="AppImageController" customModule="AppMultiple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uZu-L3-Mxs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="crS-vH-HXE">
+                                <rect key="frame" x="0.0" y="145.5" width="375" height="376"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="376" id="HLh-HN-8ZO"/>
+                                    <constraint firstAttribute="width" constant="375" id="YQJ-yH-TDV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oag-Xs-foe">
+                                <rect key="frame" x="16" y="617" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="5Mo-2U-oRY"/>
+                                    <constraint firstAttribute="height" constant="30" id="iWW-Hw-h6c"/>
+                                </constraints>
+                                <state key="normal" title="Tomar Foto"/>
+                                <connections>
+                                    <action selector="tomarFoto:" destination="pTl-n7-byW" eventType="touchUpInside" id="Obc-LV-yud"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6F-AK-RJE">
+                                <rect key="frame" x="244" y="617" width="115" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="uLo-pV-xVI"/>
+                                    <constraint firstAttribute="height" constant="30" id="xAJ-Yd-XbI"/>
+                                </constraints>
+                                <state key="normal" title="Seleccionar Foto"/>
+                                <connections>
+                                    <action selector="seleccionarFotoo:" destination="pTl-n7-byW" eventType="touchUpInside" id="ElV-KR-q2N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WZ4-S2-EvK">
+                                <rect key="frame" x="16" y="540.5" width="343" height="68.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j6F-AK-RJE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Oag-Xs-foe" secondAttribute="trailing" constant="8" symbolic="YES" id="TJ6-mJ-qjT"/>
+                            <constraint firstItem="WZ4-S2-EvK" firstAttribute="top" secondItem="crS-vH-HXE" secondAttribute="bottom" constant="19" id="Tg9-XX-q7p"/>
+                            <constraint firstItem="Oag-Xs-foe" firstAttribute="leading" secondItem="Tkq-wF-T8k" secondAttribute="leading" constant="16" id="aYR-Kk-2Vn"/>
+                            <constraint firstItem="Tkq-wF-T8k" firstAttribute="bottom" secondItem="j6F-AK-RJE" secondAttribute="bottom" constant="20" id="ab4-M9-vNm"/>
+                            <constraint firstItem="Tkq-wF-T8k" firstAttribute="trailing" secondItem="j6F-AK-RJE" secondAttribute="trailing" constant="16" id="eDn-J7-agA"/>
+                            <constraint firstItem="WZ4-S2-EvK" firstAttribute="leading" secondItem="Tkq-wF-T8k" secondAttribute="leading" constant="16" id="fcx-EF-Y9m"/>
+                            <constraint firstItem="Tkq-wF-T8k" firstAttribute="bottom" secondItem="Oag-Xs-foe" secondAttribute="bottom" constant="20" id="hxO-Sl-Z2i"/>
+                            <constraint firstItem="Oag-Xs-foe" firstAttribute="top" secondItem="WZ4-S2-EvK" secondAttribute="bottom" constant="8" id="hzY-NV-o0C"/>
+                            <constraint firstItem="Tkq-wF-T8k" firstAttribute="trailing" secondItem="WZ4-S2-EvK" secondAttribute="trailing" constant="16" id="uve-27-f2F"/>
+                            <constraint firstItem="crS-vH-HXE" firstAttribute="centerY" secondItem="uZu-L3-Mxs" secondAttribute="centerY" id="w4V-Bx-RYJ"/>
+                            <constraint firstItem="crS-vH-HXE" firstAttribute="centerX" secondItem="uZu-L3-Mxs" secondAttribute="centerX" id="xbW-Wj-N4X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tkq-wF-T8k"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataImage" destination="crS-vH-HXE" id="vYc-FF-eCN"/>
+                        <outlet property="dataLabel" destination="WZ4-S2-EvK" id="bnd-BL-1eP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5q-Az-bbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.39999999999998" y="1546.776611694153"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HQe-Bx-03a">
@@ -882,6 +952,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="img" width="259" height="194"/>
         <image name="lion" width="283.46456909179688" height="332.1259765625"/>
     </resources>
 </document>

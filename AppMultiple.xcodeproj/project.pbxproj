@@ -32,6 +32,8 @@
 		30E41F3C223978B200070009 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E41F3B223978B200070009 /* ImageCollectionViewCell.swift */; };
 		30E41F3E22399CE500070009 /* MenuComidaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E41F3D22399CE500070009 /* MenuComidaController.swift */; };
 		30E41F402239CB6E00070009 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E41F3F2239CB6E00070009 /* MenuCollectionViewCell.swift */; };
+		30E41F422239D17F00070009 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 30E41F412239D17E00070009 /* GoogLeNetPlaces.mlmodel */; };
+		30E41F45223AC72500070009 /* AppImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E41F44223AC72500070009 /* AppImageController.swift */; };
 		30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDE21A2204AB8B008584F1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		30E41F3B223978B200070009 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		30E41F3D22399CE500070009 /* MenuComidaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuComidaController.swift; sourceTree = "<group>"; };
 		30E41F3F2239CB6E00070009 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		30E41F412239D17E00070009 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
+		30E41F44223AC72500070009 /* AppImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageController.swift; sourceTree = "<group>"; };
 		30EDE21A2204AB8B008584F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +122,7 @@
 				30CFC5A02204FAA8002AE8AB /* PDF */,
 				302DDC102204161A00204A43 /* Assets.xcassets */,
 				302DDC122204161A00204A43 /* LaunchScreen.storyboard */,
+				30E41F412239D17E00070009 /* GoogLeNetPlaces.mlmodel */,
 				302DDC152204161A00204A43 /* Info.plist */,
 			);
 			path = AppMultiple;
@@ -126,6 +131,7 @@
 		3043BD9E2204A6CE004A4951 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				30E41F43223AC6FD00070009 /* MachineLearning */,
 				301FA2C122124B3100AC76E3 /* Collections */,
 				309AFBBD220B9EC8002189F4 /* Example */,
 				309AFBBE220B9F0A002189F4 /* Mazda */,
@@ -189,6 +195,14 @@
 				30CFC58E2204EBB8002AE8AB /* Mazda3.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		30E41F43223AC6FD00070009 /* MachineLearning */ = {
+			isa = PBXGroup;
+			children = (
+				30E41F44223AC72500070009 /* AppImageController.swift */,
+			);
+			path = MachineLearning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +282,9 @@
 				30CFC58D2204DDAF002AE8AB /* Mazda.swift in Sources */,
 				301FA2C52213278B00AC76E3 /* CollectionBasicController.swift in Sources */,
 				30E41F3E22399CE500070009 /* MenuComidaController.swift in Sources */,
+				30E41F45223AC72500070009 /* AppImageController.swift in Sources */,
 				309AFBC5220CA232002189F4 /* BusinessCardCodeController.swift in Sources */,
+				30E41F422239D17F00070009 /* GoogLeNetPlaces.mlmodel in Sources */,
 				30CFC5912204F45F002AE8AB /* TableViewController.swift in Sources */,
 				30EDE21B2204AB8B008584F1 /* ViewController.swift in Sources */,
 				30CFC5A32204FB2D002AE8AB /* ViewPdfController.swift in Sources */,

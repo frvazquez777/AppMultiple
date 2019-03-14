@@ -10,7 +10,7 @@ import UIKit
 
 class MainController: UITableViewController {
 
-    var arrayClass = ["View", "Mazda", "TableView", "WebService", "AppDictionary", "AutoLayout", "Collection"]
+    var arrayClass = ["View", "Mazda", "TableView", "WebService", "AppDictionary", "AutoLayout", "Collection", "MachineLearning"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,7 +77,7 @@ class MainController: UITableViewController {
     func getSegueValidation(_ segueValue: Int) -> Bool {
         var validation = false;
         switch segueValue {
-        case 0, 1, 2, 3, 4, 5, 6:
+        case 0, 1, 2, 3, 4, 5, 6, 7:
             validation = true
             break
         default:
