@@ -66,7 +66,7 @@ class AppImageController: UIViewController, UIImagePickerControllerDelegate, UIN
                     return
             }
             DispatchQueue.main.async {
-                self.dataLabel.text = "\(primerResultado.identifier)"
+                self.dataLabel.text = "\(primerResultado.identifier) \(primerResultado.confidence * 100)%"
             }
         }
         
